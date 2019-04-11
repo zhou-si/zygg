@@ -1,0 +1,25 @@
+<!--pages/map/map.wxml-->
+<view class='container'>
+<!-- 地图 -->
+  <map
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="16"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  polyline="{{polyline}}"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 300px;"
+></map>
+  <view class='msg'>
+    <view class='currentAddress'>当前位置：{{address}}</view>
+    <view>素北图文广告</view>
+    <view>地址：贵州省六盘水市钟山区南环路地税新园旁8号门面</view>
+    <view>联系电话：18617026501</view>
+    <button type="primary">地图导航</button>
+  </view>
+</view>

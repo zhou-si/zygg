@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 轮播 -->
+ <swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+ >
+   <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+ </swiper>
+ <!-- 主要业务 -->
+ <view class='navIcon'>
+    <block wx:for='{{navData}}' wx:key='{{nav.id}}' wx:for-item="nav">
+        <view class='nav-item'>
+          <image src='{{nav.icon}}'></image>
+          <view class='name'>{{nav.name}}</view>
+        </view>
+    </block>
+ </view>
+ <!-- 业务推荐 -->
+ <view class='primaryService'>
+    <view class='title'>业务推荐</view>
+    <view class='content'>
+      <block wx:for="{{primaryServiceData}}" wx:key='{{item.id}}'>
+        <view class='b-item'>
+          <image src='{{item.imgSrc}}'></image>
+          <view class='subTitle'>{{item.title}}</view>
+          <view class='describe'>{{item.describe}}</view>
+        </view>
+      </block>
+    </view>
+ </view>
+ <view class='showCase'>
+      <view class='title'>合作案例</view>
+  <swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+ >
+   <block wx:for="{{imgUrls}}" wx:key='index'>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+ </view>
+</view>

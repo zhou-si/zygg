@@ -1,0 +1,62 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+}
+image{
+  width: 100%;
+}
+swiper{
+  height: 340rpx
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.navIcon{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+}
+.nav-item{
+  box-sizing: border-box;
+  padding: 10rpx;
+  width: 25%;
+  text-align: center;
+}
+.nav-item image{
+  width: 90rpx;
+  height: 90rpx;
+  display: inline-block;
+}
+.primaryService{
+  padding-top: 20rpx;
+}
+.title{
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  padding: 0 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+.primaryService .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.primaryService .b-item{
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10rpx 20rpx;
+}
+.b-item image{
+  width: 100%;
+  height: 270rpx;
+}
+.describe{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

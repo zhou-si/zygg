@@ -1,0 +1,11 @@
+<!--pages/classify/classify.wxml-->
+<view class='container'>
+  <!-- 导航 -->
+  <view class='nav'>
+    <scroll-view class='scroll-view-x' scroll-x="true">
+      <block wx:for='{{navData}}' wx:key='{{nav.id}}' wx:for-item="nav">
+        <view class="{{navSelected===index ? 'active nav-item':'nav-item'}}"  bindtap='navFn' data-index='{{index}}'>{{nav.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  </view>
